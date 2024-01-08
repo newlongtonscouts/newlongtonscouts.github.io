@@ -1,170 +1,9 @@
-.Logo
-{
-	grid-area: logo;	
-}
-
-.Header
+main
 {
 	text-align: center;
-	grid-area: header;
-	font-size: 32px;
-}
-
-.Menu
-{
-	grid-area: menu;
-	background-color: #7413dc;
-	color: white;
-	padding: 1em;
-	font-size: 18px;
-	width: 250px;
-}
-
-.Main
-{
-	grid-area: main;
-	font-size: 24px;
-}
-
-.Right
-{
-	grid-area: right;
-}
-	
-.Footer
-{
-	grid-area: footer;
-	text-align: center;
-	font-size: 18px;
-}
-
-.BeaverButtonContainer
-{
-	grid-area: beaverbutton;
-	padding: 1em;
-}
-
-.CubButtonContainer
-{
-	grid-area: cubbutton;
-	padding: 1em;
-}
-
-.ScoutButtonContainer
-{
-	grid-area: scoutbutton;
-	padding: 1em;
-}
-
-.ExplorerButtonContainer
-{
-	grid-area: explorerbutton;
-	padding: 1em;
-}
-
-.SquirrelButtonContainer
-{
-	grid-area: squirrelbutton;
-	padding: 1em;
-}
-
-.AdultButtonContainer
-{
-	grid-area: adultbutton;
-	padding: 1em;
-}
-
-.JoinTheAdventureButtonContainer
-{
-	grid-area: jointheadventure;
-	padding: 1em;
-}
-
-.Index
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header header header header"
-		"menu main main right right right"
-		"menu beaverbutton cubbutton right right right"
-		"menu scoutbutton explorerbutton right right right"
-		"menu squirrelbutton adultbutton right right right"
-		"menu jointheadventure jointheadventure right right right"
-		"footer footer footer footer footer footer";
-	grid-gap: 10px;
-}
-
-.JoinTheAdventure
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header header header header"
-		"menu main main right right right"
-		"footer footer footer footer footer footer";
-	grid-gap: 10px;
-}
-
-.Section
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header"
-		"menu main main"
-		"menu right right"
-		"menu jointheadventure jointheadventure"
-		"footer footer footer";
-	grid-gap: 10px;
-}
-
-.FAQ
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header"
-		"menu main main"
-		"footer footer footer";
-	grid-gap: 10px;
-}
-
-.MeetTheTeam
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header"
-		"menu main main"
-		"footer footer footer";
-	grid-gap: 10px;
-}
-
-.News
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header"
-		"menu main right"
-		"footer footer footer";
-	grid-gap: 10px;
-}
-
-.KitRental
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header"
-		"menu main right"
-		"footer footer footer";
-	grid-gap: 10px;
-}
-
-.TopAwards
-{
-	display: grid;
-	grid-template-areas:
-		"logo header header header"
-		"menu main main main"
-		"menu main main main"
-		"footer footer footer footer";
-	grid-gap: 10px;
+	max-width: 1200px;
+	margin: auto;
+	font-size: 2em;	
 }
 
 body
@@ -174,208 +13,154 @@ body
 	background-image: url("/img/background.png");
 }
 
+main h1
+{
+	text-align: center;
+	font-size: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+header
+{
+	text-align: center;
+	background-color: #7413dc;
+	overflow: hidden;
+}
+
+header a
+{
+	float: left;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	padding: 1em 1em;
+	text-decoration: none;
+}
+
+.Dropdown
+{
+  float: left;
+  overflow: hidden;
+}
+
+.Dropdown .DropdownButton
+{
+	border: none;
+	font-size: 1em;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 1em 1em;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+header a:hover, .Dropdown:hover .DropdownButton
+{
+  background-color: #00a794;
+}
+
+.DropdownContent
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Dropdown:hover .DropdownContent
+{
+  display: block;
+}
+
+.DropdownContent a
+{
+  float: none;
+  color: black;
+  padding: 1em 1em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
 a
 {
 	color: black;
+}
+
+.Message
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: #ed3f23;
+	padding: 0.5em;
+	color: white;
 }
 
 .LogoImage
 {
 	width: 250px;
 	height: 100px;
+	float: left;
+	padding: 0.5em;
+	padding-right: 4em;
 }
 
-.DragonLogoImage
+footer
 {
-	margin-top: 3em;
-	width: 285px;
+	text-align: center;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 1em;
+	font-size: 1.5em;
 }
 
-.StanhopeLogo
-{
-	width: 285px;
-}
-
-.SectionLogo
-{
-	width: 300px;
-}
-
-.ExplorerLogo
-{
-	width: 300px;
-	margin-top: 1em;
-}
-
-.IndexPhoto
+.Carousel
 {
 	width: 100%;
 }
 
-.JoinTheAdventurePhoto
+.SectionButton
 {
-	width: 60%;
-	float: right;
-}
-
-.ArchivePhoto
-{
+	border: none;
 	width: 40%;
+	height: 5em;
+	color: white;
+	font-size: 0.8em;
+	margin: 1em;
+	font-weight: bold;
 }
 
-.SectionPhoto
+.SectionButton:hover
 {
-	width: 49%;
+	background-color: #7413dc;
+	transform: scale(1.1); 
+}
+
+.JoinTheAdventureButton
+{
+	border: none;
+	width: 90%;
+	height: 5em;
+	background-color: #7413dc;
+	color: white;
+	font-size: 1em;
+	margin: 1em;
+	font-weight: bold;
+}
+
+.JoinTheAdventureButton:hover
+{
+	background-color: #00a794;
+	transform: scale(1.1); 
 }
 
 .Mugshot
 {
 	width: 10em;
-}
-
-.BeaverButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #006ddf;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.CubButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #23a950;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.ScoutButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #00a794;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.ExplorerButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #003982;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.SquirrelButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #ed3f23;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.AdultButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	background-color: #205b41;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.JoinTheAdventureButton
-{
-	display: block;
-	text-align: center;
-	line-height: 6em;
-	text-decoration: none;
-	font-size: 24px;
-	color: white;
-	background-color: #7413dc;
-	border: white;
-	width: 100%;
-	height: 100%;
-}
-
-.Menu a
-{
-	color: white;
-	text-decoration: none;
-}
-
-.MugshotContainer
-{
-	display: inline-block;
-	text-align: center;
-	padding: 1em;
-}
-
-#AwardFrame
-{
-	width: 70%;
-	height: 75%;
-}
-
-.DragonBanner
-{
-	width: 100%;
-}
-
-/* Mobile / Small Screen Mode */
-
-@media (max-width: 1200px)
-{
-	.Index
-	{
-		display: grid;
-		grid-template-areas:
-			"logo header header"
-			"menu main main"
-			"menu right right"
-			"menu beaverbutton cubbutton"
-			"menu scoutbutton explorerbutton"
-			"menu squirrelbutton adultbutton"
-			"menu jointheadventure jointheadventure"
-			"footer footer footer";
-		grid-gap: 10px;
-	}
-	
-	.JoinTheAdventurePhoto
-	{
-		display: none;
-	}
 }
