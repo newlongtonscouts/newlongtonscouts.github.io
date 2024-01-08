@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link href = "https://fonts.googleapis.com/css?family=Nunito Sans" rel = "stylesheet">
+		<link rel = "stylesheet"  type = "text/css" href = "css/style.css">
+		<link rel = "icon" href = "img/icon.png">
+	</head>
+	<body>
+		<div class = "Index">
+			<div class = "Logo">
+				<a href = "index.html">
+					<img src = "img/logo.png" alt = "1st New Longton Scouts Logo" class = "LogoImage">
+				</a>
+			</div>
+			<div class = "Header">
+				<h1>{{ page.heading }}</h1>
+			</div>
+			<div class = "Menu">
+				<p><a href = "index.html">Home</a></p>
+				<p><a href = "squirrels.html">Squirrels</a></p>
+				<p><a href = "beavers.html">Beavers</a></p>
+				<p><a href = "cubs.html">Cubs</a></p>
+				<p><a href = "scouts.html">Scouts</a></p>
+				<p><a href = "explorers.html">Explorers</a></p>
+				<p><a href = "volunteers.html">Adult Volunteers</a></p>
+				<p><a href = "/dragonquest/dragonquest.html">Dragon Quest</a></p>
+				<p><a href = "jointheadventure.html">Join the Adventure</a></p>
+				<p><a href = "faq.html">FAQ</a></p>
+				<p><a href = "meettheteam.html">Meet the Team</a></p>
+			</div>
+			{{ content }}
+			<div class = "Footer">
+				<p>Copyright 
+					<script>
+						var date = new Date(); 
+						var year = date.getFullYear();
+						document.write (year);
+					</script>
+				1st New Longton Scouts. Created by Alex Paterson and Chris Worthington.</p>
+			</div>
+		</div>
+	</body>
+</html>
