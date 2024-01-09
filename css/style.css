@@ -128,6 +128,12 @@ footer
 	font-size: 1.5em;
 }
 
+.TextPage
+{
+	font-size: 0.8em;
+	text-align: left;
+}
+
 .Carousel
 {
 	width: 100%;
@@ -166,7 +172,21 @@ footer
 	transform: scale(1.1); 
 }
 
+.TeamTable
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .Mugshot
 {
-	width: 10em;
+	width: 8em;
+}
+
+td
+{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;;
 }
