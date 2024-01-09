@@ -3,7 +3,9 @@ main
 	text-align: center;
 	max-width: 1200px;
 	margin: auto;
-	font-size: 2em;	
+	font-size: 2em;
+	padding: 10px;
+	background-color: #fdfdfd;
 }
 
 body
@@ -67,7 +69,7 @@ header a:hover, .Dropdown:hover .DropdownButton
 {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -138,7 +140,6 @@ footer
 
 .SectionButton:hover
 {
-	background-color: #7413dc;
 	transform: scale(1.1); 
 }
 
@@ -156,7 +157,6 @@ footer
 
 .JoinTheAdventureButton:hover
 {
-	background-color: #00a794;
 	transform: scale(1.1); 
 }
 
