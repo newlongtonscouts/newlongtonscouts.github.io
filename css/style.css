@@ -102,6 +102,12 @@ a
 	background-color: #ed3f23;
 	padding: 0.5em;
 	color: white;
+	font-size: 18px;
+}
+
+.Message h1
+{
+	font-size: 34px;
 }
 
 .LogoImage

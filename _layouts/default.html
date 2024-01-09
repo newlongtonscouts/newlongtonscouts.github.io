@@ -6,6 +6,7 @@
 		<link rel = "stylesheet"  type = "text/css" href = "css/style.css">
 		<link rel = "icon" href = "img/icon.png">
 		<meta charset = "utf-8">
+		<meta name = "LastPostDate" content = {{ site.posts.first.date | date: "%Y-%m-%d" }}>
 	</head>
 	<body>
 		<header>
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 		</header>
-		<div class = "Message">
+		<div class = "Message" id = "Message">
 			{{ site.posts.first }}
 		</div>
 		<main>
@@ -47,4 +48,5 @@
 			<p>Created by {{ page.authors }}.</p>
 		</footer>
 	</body>
+	<script type = "text/JavaScript" src = "/js/HideMessage.js"></script>
 </html>
