@@ -34,7 +34,7 @@
 			</div>
 		</header>
 		<div class = "Message">
-			{{ site.posts | where: post.date, site.time limit:1 }}
+			{{ site.posts.first }}
 		</div>
 		<main>
 			<h1>{{ page.heading }}</h1>
