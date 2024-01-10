@@ -125,7 +125,14 @@ footer
 	max-width: 1200px;
 	margin: auto;
 	padding-top: 1em;
+	padding-bottom: 1em;
 	font-size: 1.5em;
+	background-color: #7413dc;
+}
+
+footer a
+{
+	color: white;
 }
 
 .TextPage
