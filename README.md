@@ -1,4 +1,4 @@
-# newlongtonscouts.com v3.x Documentation
+# newlongtonscouts.com v3.x
 
 by Alex Paterson
 
