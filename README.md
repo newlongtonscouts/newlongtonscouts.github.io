@@ -24,7 +24,22 @@ The pre-release build is available at [https://dev.newlongtonscouts.com](https:/
 3. Select the ```_posts``` folder in the main window.
 4. Now, click "Add File" at the top left.
 5. Then, select "Create New File".
-6. ...
+6. Set your file in the format ```YYYY-MM-DD-title.md``` where ```YYYY-MM-DD``` is the day you want your banner to be visible and ```title``` is the title of the message with no spaces or capital letters. For example, a banner congratulating the winners of Dragon Quest 2023 would have a name like ```2023-10-15-dragonquestwinners.md```.
+7. Copy and paste this template into your file:
+```
+---
+
+layout: post
+title:  "[REPLACE WITH YOUR TITLE]"
+
+---
+
+# [REPLACE WITH YOUR TITLE]
+
+[REPLACE WITH YOUR MESSAGE]
+```
+9. Delete the []-ed text and replace it with what you would like on your banner.
+10. Press the green "Commit Changes" button. The update should apply automatically. Banners can (and should) be added ahead of time, so it's best to get them done early.
 
 ## The Auto-Deploy System
 
