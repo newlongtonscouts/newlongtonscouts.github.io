@@ -38,8 +38,8 @@ title:  "[REPLACE WITH YOUR TITLE]"
 
 [REPLACE WITH YOUR MESSAGE]
 ```
-9. Delete the []-ed text and replace it with what you would like on your banner.
-10. Press the green "Commit Changes" button. The update should apply automatically. Banners can (and should) be added ahead of time, so it's best to get them done early.
+8. Delete the []-ed text and replace it with what you would like on your banner.
+9. Press the green "Commit Changes" button. The update should apply automatically. Banners can (and should) be added ahead of time, so it's best to get them done early.
 
 ## The Auto-Deploy System
 
