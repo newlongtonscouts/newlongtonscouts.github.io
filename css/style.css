@@ -27,7 +27,7 @@ main h1
 header
 {
 	text-align: center;
-	/*background-color: #7413dc;*/
+	background-color: #7413dc; /* Default value if "colour" property isn't set. */
 	overflow: hidden;
 }
 
