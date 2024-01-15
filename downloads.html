@@ -12,14 +12,12 @@ colour: 7413dc
 	<table>
 		<tr>
 			<th>File</th>
-			<th>Date Uploaded</th>
 			<th>Download</th>
 		</tr>
 		{% assign downloads = site.static_files | where_exp: "file", "file.path contains '/downloads/'" %}
 		{% for file in downloads %}
 			<tr>
 				<td><b>{{ file.name }}</b></td>
-				<td>{{ file.modified_time | date_to_long_string: "ordinal" }}</td>
 				<td><a href = "{{ file.path }}">Download</a></td>
 			</tr>
 		{% endfor %}
