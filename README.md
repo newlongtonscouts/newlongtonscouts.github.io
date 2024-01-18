@@ -31,6 +31,7 @@ The pre-release build is available at [https://dev.newlongtonscouts.com](https:/
 
 layout: post
 title:  "[REPLACE WITH YOUR TITLE]"
+persistent: false
 
 ---
 
