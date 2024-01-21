@@ -15,5 +15,19 @@ persistent: false
 	{
 		document.getElementsByTagName ("header")[0].style.backgroundColor = "black";
 		document.getElementsByTagName ("footer")[0].style.backgroundColor = "black";
+		
+		var buttons = document.getElementsByClassName ("SectionButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "black";
+		}
+		
+		buttons = document.getElementsByClassName ("JoinTheAdventureButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "#ed3f23";
+		}
 	});
 </script>
