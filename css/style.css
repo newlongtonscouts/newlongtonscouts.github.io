@@ -6,6 +6,7 @@ main
 	font-size: 2em;
 	padding: 10px;
 	background-color: #fdfdfd;
+	min-height: 77vh;
 }
 
 body
@@ -137,7 +138,6 @@ a
 footer
 {
 	text-align: center;
-	/*max-width: 1200px;*/
 	margin: auto;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -197,7 +197,8 @@ footer a
 
 .HeadingImage
 {
-	height: 2em;
+	max-height: 2em;
+	max-width: 100%;
 }
 
 .FullWidthImage
@@ -224,6 +225,11 @@ footer a
 th
 {
 	text-align: center;
+}
+
+.BorderedTable table
+{
+	width: 100%;
 }
 
 .BorderedTable table, .BorderedTable th, .BorderedTable td
