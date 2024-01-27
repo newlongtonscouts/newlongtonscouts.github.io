@@ -17,6 +17,13 @@ The pre-release build is available at [https://dev.newlongtonscouts.com](https:/
 - Fix the visual wonkiness. Images will be replaced with higher quality and more up to date ones where possible, and edited to all be the same size (see the Meet the Team page for why this needs to be done).
 - Reduce webmaster workload, as SSL certs and server updates will be handled by GitHub.
 
+## To-do
+
+- Update the Group Exec names.
+- Add all the Squirrel Leaders.
+- Get photos for some volunteers.
+- Update Squirrel page text.
+
 ## How to add a Banner
 
 1. Log in to [GitHub](https://github.com). If you don't have an account, please create one.
@@ -45,3 +52,7 @@ persistent: false
 ## The Auto-Deploy System
 
 Jekyll is a static site system, so the content for the banner is added to the page during the build process, rather than pulled in dynamically, like a database would. This leads to a problem where the banner doesn't update on a new day. Luckily, GitHub has come to our rescue with GitHub Actions, and I have added a build process located in ```.github/workflows``` to build a new version of the site at 00:01 every day. However, sometimes the build does not start at 00:01, and has to wait for sufficient resources to become available first. This can take up to an hour, but by morning, the latest banner should be available.
+
+## Getting Analytics Data with GoatCounter
+
+I have included [GoatCounter](https://www.goatcounter.com/) starting from version 3.79 to give us the ability to see how many views the site (and each page), is getting, and where they're being referred from. This is most likely a search engine. According to GoatCounter, we don't actually need user consent under GDPR to collect this information, as it is not personally identifiable in any way. Our specific GoatCounter page is available [here](https://newlongtonscouts.goatcounter.com/). If you need access, get in touch with me, and I can arrange something for you.
