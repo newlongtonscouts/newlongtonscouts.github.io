@@ -19,6 +19,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Update Views job
+  update-views:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Get View Data
+          env:
+            GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          run: |
+            curl() {
+            \command curl --silent \
+            --header 'Content-Type: application/json' \
+            --header "Authorization: Bearer $GOATCOUNTER_TOKEN" \
+            "$@"
+            }
+            curl -X GET "https://newlongtonscouts.goatcounter.com/api/v0/stats/total" | sed -n '2p' | tr --delete , > _data/views.yml
+            
+        - name: Save View Data
+            run: |
+                git add _data/views.yml
+                git commit -m "Updated Views Count."
+                git push
+  
   # Build job
   build:
     runs-on: ubuntu-latest

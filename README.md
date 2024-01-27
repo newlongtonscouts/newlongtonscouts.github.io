@@ -23,6 +23,7 @@ The pre-release build is available at [https://dev.newlongtonscouts.com](https:/
 - Add all the Squirrel Leaders.
 - Get photos for some volunteers.
 - Update Squirrel page text.
+- Replace the stock photos with our own high-res photos.
 
 ## How to add a Banner
 
