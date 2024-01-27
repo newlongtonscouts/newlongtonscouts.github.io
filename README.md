@@ -9,7 +9,7 @@ Copyright © 2024 1st New Longton Scouts
 The pre-release build is available at [https://dev.newlongtonscouts.com](https://dev.newlongtonscouts.com).
 
 ## Goals for v3.x
-- Reduce running costs by moving to Github Pages (free, unless we use too many build jobs), from our old AWS Lightsail instance (~£3 - £5 per month). This could leave to a saving of about £48 a year - that's enough for an extra activity on camp!
+- Reduce running costs by moving to Github Pages (free), from our old AWS Lightsail instance (~£3 - £5 per month). This could leave to a saving of about £48 a year - that's enough for an extra activity on camp!
 - Port the website to [Jekyll](https://jekyllrb.com/). Jekyll's template system allows for easier editing (maybe even via phone when on the go), and GitHub pages allows for near-instant deployment.
 - Add a Message Banner system that allows for custom messages to be displayed based on the date. This is also made possible by Jekyll via the post system.
 - Improve the User Experience by making the website prettier and more responsive.
