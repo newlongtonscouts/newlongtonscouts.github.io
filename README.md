@@ -50,6 +50,19 @@ persistent: false
 8. Delete the []-ed text and replace it with what you would like on your banner.
 9. Press the green "Commit Changes" button. The update should apply automatically. Banners can (and should) be added ahead of time, so it's best to get them done early.
 
+## How to add a File to the Downloads Page
+
+The website now includes a Downloads page for files that we share with parents. This is better than the email attachments we normally use, as emails can get deleted or buried under other junk emails from businesses you made an account with to buy someone's Christmas present 2 years ago. Adding a new file to the Downloads page is like adding a new Banner, but easier in every way.
+
+1. Log in to [GitHub](https://github.com). If you don't have an account, please create one.
+2. Go to the project page at [https://github.com/newlongtonscouts/newlongtonscouts.github.io](https://github.com/newlongtonscouts/newlongtonscouts.github.io). Make sure you are registered as a member of New Longton Scouts on GitHub. You can check by seeing if there is an "Add File" button above the list of files. If you aren't, contact me, and I will add you.
+3. Select the ```downloads``` folder in the main window.
+4. Now, click "Add File" at the top left.
+5. Click "Upload Files".
+6. Drag and Drop the file you want to upload, or click "Choose your files" and select it from there.
+7. Press the green "Commit Changes" button.
+8. The file will now be added to the website, and will be visible on the Downloads page shortly.
+
 ## The Auto-Deploy System
 
 Jekyll is a static site system, so the content for the banner is added to the page during the build process, rather than pulled in dynamically, like a database would. This leads to a problem where the banner doesn't update on a new day. Luckily, GitHub has come to our rescue with GitHub Actions, and I have added a build process located in ```.github/workflows``` to build a new version of the site at 00:01 every day. However, sometimes the build does not start at 00:01, and has to wait for sufficient resources to become available first. This can take up to an hour, but by morning, the latest banner should be available.
