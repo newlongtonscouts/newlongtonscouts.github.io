@@ -8,15 +8,16 @@
 		<meta charset = "utf-8">
 		<meta name = "LastPostDate" content = {{ site.posts.first.date | date: "%Y-%m-%d" }}>
 		<meta name = "Persistent" content = {{ site.posts.first.persistent }}>
-		<script data-goatcounter = "https://newlongtonscouts.goatcounter.com/count" async src = "//gc.zgo.at/count.js"></script>
+		{% include analytics.html %}
 	</head>
 	<body>
-		<div class = "DevBanner">
-			<b>Found an issue with our new site?</b>
-			<p>Please report it to Alex at admin@newlongtonscouts.com, including the information on <a href = "/stats.html">this page</a>. Our old site is still available at <a href = "https://old.newlongtonscouts.com">old.newlongtonscouts.com</a> until 01/03/2024.
-		</div>
+		{% if site.devbanner %}
+			<div class = "DevBanner">
+				{% include devbanner.html %}
+			</div>
+		{% endif %}
 		<header style = "background-color: #{{ page.colour }} ;">
-			<img src = "/img/logo.png" alt = "1st New Longton Scouts Logo" class = "LogoImage">
+			<img src = "/img/logo.png" alt = "{{ site.title }} Logo" class = "LogoImage">
 			<div class = "MenuBar">
 				<b><a href = "/index.html">Home</a></b>
 				<div class = "Dropdown">
@@ -59,14 +60,9 @@
 			<h1>{{ page.heading }}</h1>
 			{{ content }}
 		</main>
-		<footer style = "background-color: #{{ page.colour }} ;">
-			<p><b>Follow our adventures on Instagram!</b></p>
-			<a href = "https://www.instagram.com/newlongtonscouts/"><img src = "/img/instagram_group.svg" alt = "1st New Longton Scouts Instagram" class = "Instagram"></a>
-			<br>
-			<a href = "https://www.instagram.com/stanhopeesu/"><img src = "/img/instagram_explorers.svg" alt = "Stanhope ESU Instagram" class = "Instagram"></a>
-			<br>
-			<br>
-			<p>Copyright {{ site.time | date: "%Y" }} 1st New Longton Scouts.</p>
+		<footer style = "background-color: #{{ page.colour }};">
+			{% include socials.html %}
+			<p>Copyright {{ site.time | date: "%Y" }} {{ site.title }}.</p>
 			<p>Created by {{ page.authors }}.</p>
 		</footer>
 	</body>
