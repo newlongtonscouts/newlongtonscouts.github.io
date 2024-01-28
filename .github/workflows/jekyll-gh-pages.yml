@@ -33,7 +33,9 @@ jobs:
             --header "Authorization: Bearer $GOATCOUNTER_TOKEN" \
             "$@"
             }
-            curl -X GET "https://newlongtonscouts.goatcounter.com/api/v0/stats/total" | tr --delete { | tr --delete } | tr --delete , > _data/views.yml
+            mkdir _data
+            touch _data/views.yml
+            curl -X GET "https://newlongtonscouts.goatcounter.com/api/v0/stats/total" | sed -n '2p' | tr --delete , > _data/views.yml
             
         - name: Save View Data
           run: |
