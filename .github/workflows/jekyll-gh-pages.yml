@@ -23,6 +23,11 @@ jobs:
   update-views:
     runs-on: ubuntu-latest
     steps:
+        - name: Clone Repository
+          run: |
+              git clone https://github.com/newlongtonscouts/newlongtonscouts.github.io.git
+              cd ./newlongtonscouts.github.io
+              
         - name: Get View Data
           env:
             GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
@@ -33,8 +38,6 @@ jobs:
             --header "Authorization: Bearer $GOATCOUNTER_TOKEN" \
             "$@"
             }
-            mkdir _data
-            touch _data/views.yml
             curl -X GET "https://newlongtonscouts.goatcounter.com/api/v0/stats/total" | sed -n '2p' | tr --delete , > _data/views.yml
             
         - name: Save View Data
