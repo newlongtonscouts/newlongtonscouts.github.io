@@ -70,3 +70,7 @@ Jekyll is a static site system, so the content for the banner is added to the pa
 ## Getting Analytics Data with GoatCounter
 
 I have included [GoatCounter](https://www.goatcounter.com/) starting from version 3.79 to give us the ability to see how many views the site (and each page), is getting, and where they're being referred from. This is most likely a search engine. According to GoatCounter, we don't actually need user consent under GDPR to collect this information, as it is not personally identifiable in any way. Our specific GoatCounter page is available [here](https://newlongtonscouts.goatcounter.com/). If you need access, get in touch with me, and I can arrange something for you.
+
+## I'm not from 1st New Longton, can my group have something similar?
+
+**Yes!** I am planning to make the Jekyll theme this site uses available for other groups to use for their site, and a template site to make it easier to get your site set up and functioning quickly. However, these are not quite ready yet. Watch this space...

@@ -1,20 +1,35 @@
+#
+# ***************
+# * _config.yml *
+# ***************
+#
 
 # Standard Settings
 
 title: 1st New Longton Scouts # Make this your group name.
 email: admin@newlongtonscouts.com
 url: "dev.newlongtonscouts.com"
-
-# Theme Settings
-
 plugins:
   - jekyll-remote-theme
-theme:
-#remote_theme:
+  
+# Theme Settings
 
-# Custom Settings
+#theme: jekyll-theme-be-prepared
+remote_theme: newlongtonscouts/jekyll-theme-be-prepared
+stylesheet: be-prepared.css # Remember to import be-prepared.css into your own custom stylesheets.
 
-devbanner: true
+# Default Instagram Banner Settings
+
+instagram: https://www.instagram.com/newlongtonscouts/
+instagramlabelsize: 500.2
+
+# Version Settings
+
 repo: newlongtonscouts/newlongtonscouts.github.io
 majorversion: 3
 releasedatetime: 2024-01-01T00:00:00Z
+# manualversion: 1.0.0 # Uncomment this if you're not hosting your site on GitHub pages (or you want to use proper numbering).
+
+# Misc. Settings
+
+devbanner: true
