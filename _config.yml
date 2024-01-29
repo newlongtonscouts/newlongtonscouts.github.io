@@ -1,5 +1,20 @@
+
+# Standard Settings
+
 title: 1st New Longton Scouts # Make this your group name.
 email: admin@newlongtonscouts.com
 url: "dev.newlongtonscouts.com"
+
+# Theme Settings
+
+plugins:
+  - jekyll-remote-theme
 theme:
+#remote_theme:
+
+# Custom Settings
+
 devbanner: true
+repo: newlongtonscouts/newlongtonscouts.github.io
+majorversion: 3
+releasedatetime: 2024-01-01T00:00:00Z

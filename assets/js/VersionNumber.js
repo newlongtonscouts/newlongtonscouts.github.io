@@ -1,16 +1,18 @@
+---
 
-// Major Version Number.
-const major = 3;
+#
 
-// Release Date / Time of Major Version.
-const releaseDateTime = new Date ("2024-01-01T00:00:00Z");
+---
+
+const major = {{ site.majorversion }};
+const releaseDateTime = new Date ("{{ site.releasedatetime }}");
 
 
 import { Octokit, App } from "https://esm.sh/octokit";
 
 const octokit = new Octokit({ });
 
-var results = await octokit.request("GET /repos/newlongtonscouts/newlongtonscouts.github.io/commits?per_page=100000",
+var results = await octokit.paginate ("GET /repos/{{ site.repo }}/commits?per_page=100",
 {
   owner: "OWNER",
   repo: "REPO",
@@ -22,7 +24,7 @@ var results = await octokit.request("GET /repos/newlongtonscouts/newlongtonscout
 
 var commitsSinceLastMajorVersion = [];
 
-for (var commit of results.data)
+for (var commit of results)
 {
 	var commitDate = new Date (commit.commit.committer.date);
 	
