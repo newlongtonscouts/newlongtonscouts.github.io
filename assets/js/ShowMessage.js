@@ -1,6 +1,12 @@
+---
+
+#
+
+---
+
 const currentDate = new Date ();
-var postDate = document.getElementsByName ("LastPostDate") [0].getAttribute ("content");
-var persistent = document.getElementsByName ("Persistent") [0].getAttribute ("content");
+const postDate = '{{ site.posts.first.date | date: "%Y-%m-%d" }}';
+const persistent = {{ site.posts.first.persistent }};
 
 if (postDate == currentDate.toISOString ().slice (0, 10) || persistent === "true")
 {
