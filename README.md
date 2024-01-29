@@ -52,7 +52,7 @@ persistent: false
 
 ## How to add a File to the Downloads Page
 
-The website now includes a Downloads page for files that we share with parents. This is better than the email attachments we normally use, as emails can get deleted or buried under other junk emails from businesses you made an account with to buy someone's Christmas present 2 years ago. Adding a new file to the Downloads page is like adding a new Banner, but easier in every way.
+The website now includes a Downloads page for files that we share with parents. This is better than the email attachments we normally use, as emails can get deleted or buried under junk emails from businesses you made an account with to buy someone's Christmas present 2 years ago. Adding a new file to the Downloads page is like adding a new Banner, but easier in every way.
 
 1. Log in to [GitHub](https://github.com). If you don't have an account, please create one.
 2. Go to the project page at [https://github.com/newlongtonscouts/newlongtonscouts.github.io](https://github.com/newlongtonscouts/newlongtonscouts.github.io). Make sure you are registered as a member of New Longton Scouts on GitHub. You can check by seeing if there is an "Add File" button above the list of files. If you aren't, contact me, and I will add you.
