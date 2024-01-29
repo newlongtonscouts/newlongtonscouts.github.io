@@ -3,8 +3,8 @@
 	<head>
 		<title>{{ page.title }}</title>
 		<link href = "https://fonts.googleapis.com/css?family=Nunito Sans" rel = "stylesheet">
-		<link rel = "stylesheet"  type = "text/css" href = "/css/style.css">
-		<link rel = "icon" href = "/img/icon.png">
+		<link rel = "stylesheet"  type = "text/css" href = "/assets/css/style.css">
+		<link rel = "icon" href = "/assets/img/icon.png">
 		<meta charset = "utf-8">
 		<meta name = "LastPostDate" content = {{ site.posts.first.date | date: "%Y-%m-%d" }}>
 		<meta name = "Persistent" content = {{ site.posts.first.persistent }}>
@@ -17,7 +17,7 @@
 			</div>
 		{% endif %}
 		<header style = "background-color: #{{ page.colour }} ;">
-			<img src = "/img/logo.png" alt = "{{ site.title }} Logo" class = "LogoImage">
+			<img src = "/assets/img/logo.png" alt = "{{ site.title }} Logo" class = "LogoImage">
 			<div class = "MenuBar">
 				<b><a href = "/index.html">Home</a></b>
 				<div class = "Dropdown">
@@ -66,5 +66,5 @@
 			<p>Created by {{ page.authors }}.</p>
 		</footer>
 	</body>
-	<script type = "text/JavaScript" src = "/js/ShowMessage.js"></script>
+	<script type = "text/JavaScript" src = "/assets/js/ShowMessage.js"></script>
 </html>

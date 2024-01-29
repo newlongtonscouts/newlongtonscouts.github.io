@@ -6,7 +6,7 @@ var time = 5000;
 
 async function MakeCarousel ()
 {
-	let response = await fetch ("json/Carousel.json");
+	let response = await fetch ("assets/json/Carousel.json");
 	let jsonObject =  await response.json(); // Convert response to JSON.
 	
 	var carousel = document.getElementById ("Carousel");
