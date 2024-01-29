@@ -2,7 +2,7 @@
 
 by Alex Paterson
 
-Copyright © 2024 1st New Longton Scouts
+Copyright © 2024 1st New Longton Scouts - All rights reserved
 
 ## Try the Pre-Release Build
 
