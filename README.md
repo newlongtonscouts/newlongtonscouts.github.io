@@ -4,10 +4,6 @@ by Alex Paterson
 
 Copyright © 2024 1st New Longton Scouts - All rights reserved
 
-## Try the Pre-Release Build
-
-The pre-release build is available at [https://dev.newlongtonscouts.com](https://dev.newlongtonscouts.com).
-
 ## Goals for v3.x
 - Reduce running costs by moving to Github Pages (free), from our old AWS Lightsail instance (~£3 - £5 per month). This could leave to a saving of about £48 a year - that's enough for an extra activity on camp!
 - Port the website to [Jekyll](https://jekyllrb.com/). Jekyll's template system allows for easier editing (maybe even via phone when on the go), and GitHub pages allows for near-instant deployment.
