@@ -16,6 +16,13 @@ colour: 7413dc
 
 ---
 
+<div id = "SearchBarContainer" style = "display: none;">
+	<input id = "SearchTerm" onkeydown = "SearchOnEnter (this)"></input>
+	<button onclick = "Search ()" class = "SearchButton">Search</button>
+	<button onclick = "Clear ()" class = "ClearButton">Clear</button>
+	<br><br>
+</div>
+
 <div class = "BorderedTable">
 	<table>
 		<tr>
@@ -24,10 +31,14 @@ colour: 7413dc
 		</tr>
 		{% assign downloads = site.static_files | where_exp: "file", "file.path contains '/downloads/'" %}
 		{% for file in downloads %}
-			<tr>
+			<tr class = "Row">
 				<td><b>{{ file.name }}</b></td>
 				<td style = "text-align: center;"><a href = "{{ file.path }}"><button class = "DownloadButton">Download</button></a></td>
 			</tr>
 		{% endfor %}
 	</table>
 </div>
+
+<script type = "text/JavaScript" src = "/assets/js/Search.js"></script>
+
+</script>

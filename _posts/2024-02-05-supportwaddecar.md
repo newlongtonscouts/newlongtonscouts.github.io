@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Support Wadddecar"
-persistent: false
+persistent: true
 
 ---
 
