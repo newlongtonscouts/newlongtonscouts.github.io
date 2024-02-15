@@ -69,4 +69,4 @@ I have included [GoatCounter](https://www.goatcounter.com/) starting from versio
 
 ## I'm not from 1st New Longton, can my group have something similar?
 
-**Yes!** I am planning to make the Jekyll theme this site uses available for other groups to use for their site, and a template site to make it easier to get your site set up and functioning quickly. However, these are not quite ready yet. Watch this space...
+**Yes!** The theme I used to make this is available [here](https://github.com/newlongtonscouts/jekyll-theme-be-prepared). It is open-source, so your group can use it free of charge. There is also a template site [here](https://github.com/newlongtonscouts/be-prepared-template) to make it easier to get started as most of the config is already done for you.
