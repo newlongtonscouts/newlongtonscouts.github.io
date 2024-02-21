@@ -10,9 +10,9 @@
 title: 1st New Longton Scouts # Make this your group name.
 email: admin@newlongtonscouts.com
 url: "newlongtonscouts.com"
+exclude: [tsconfig.json]
 plugins:
   - jekyll-remote-theme
-
   
 # Theme Settings
 
