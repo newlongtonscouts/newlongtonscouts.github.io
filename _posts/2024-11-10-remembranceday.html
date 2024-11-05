@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Remembrance Day"
-persistent: false
+persistent: true
 
 ---
 
@@ -31,6 +31,13 @@ persistent: false
 		}
 		
 		buttons = document.getElementsByClassName ("DownloadButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "black";
+		}
+
+        buttons = document.getElementsByClassName ("SearchButton");
 		
 		for (button of buttons)
 		{
