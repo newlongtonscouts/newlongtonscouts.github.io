@@ -5,5 +5,3 @@ title:  "Winter Camp"
 persistent: false
 
 ---
-
-# Winter Camp applications have now closed!
