@@ -1,0 +1,47 @@
+---
+
+layout: post
+title:  "Remembrance Sunday"
+persistent: true
+
+---
+
+<h1>Lest We Forget</h1>
+
+<p>On Remembrance Sunday, we remember all those who have died in wars since 1914.</p>
+
+<script>
+	window.addEventListener ("load", function ()
+	{
+		document.getElementsByTagName ("header")[0].style.backgroundColor = "black";
+		document.getElementsByTagName ("footer")[0].style.backgroundColor = "black";
+		
+		var buttons = document.getElementsByClassName ("SectionButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "black";
+		}
+		
+		buttons = document.getElementsByClassName ("JoinTheAdventureButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "#ed3f23";
+		}
+		
+		buttons = document.getElementsByClassName ("DownloadButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "black";
+		}
+
+        buttons = document.getElementsByClassName ("SearchButton");
+		
+		for (button of buttons)
+		{
+			button.style.backgroundColor = "black";
+		}
+	});
+</script>
