@@ -1,0 +1,145 @@
+---
+
+# **********************************
+# * dragonquest/live/checkout.html *
+# **********************************
+#
+# Copyright 2024 1st New Longton Scouts.
+# All rights reserved.
+# See below for authors.
+
+title: Dragon Quest Live Check Out - 1st New Longton Scouts
+heading: Dragon Quest Live Check Out
+layout: textpage
+authors: Alex Paterson
+colour: 7413dc
+
+---
+
+<p>Team:</p>
+<select id = "Team">
+    <option value = "Error">Could not connect to server.</option>
+</select>
+<br>
+<br>
+<p>Checkpoint:</p>
+<select id = "Checkpoint">
+    <option value = "Error">Could not connect to server.</option>
+</select>
+<br>
+<br>
+<p>Points for Arriving Together:</p>
+<select id = "ArrivingTogether">
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+</select>
+<br>
+<br>
+<p>Points for Behaviour:</p>
+<select id = "Behaviour">
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+</select>
+<br>
+<br>
+<p>Points for Arriving from the Right Direction:</p>
+<select id = "ArrivingRightDirection">
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+</select>
+<br>
+<br>
+<p>Points for Explaining the Next Leg and Departing Correctly:</p>
+<select id = "NextLeg">
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+    <option value = "11">11</option>
+    <option value = "12">12</option>
+    <option value = "13">13</option>
+    <option value = "14">14</option>
+    <option value = "15">15</option>
+    <option value = "16">16</option>
+    <option value = "17">17</option>
+    <option value = "18">18</option>
+    <option value = "19">19</option>
+    <option value = "20">20</option>
+</select>
+<br>
+<br>
+<p>Points for 5 Minute Challenge:</p>
+<select id = "Challenge">
+    <option value = "0">No challenge at this checkpoint.</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+    <option value = "6">6</option>
+    <option value = "7">7</option>
+    <option value = "8">8</option>
+    <option value = "9">9</option>
+    <option value = "10">10</option>
+    <option value = "11">11</option>
+    <option value = "12">12</option>
+    <option value = "13">13</option>
+    <option value = "14">14</option>
+    <option value = "15">15</option>
+    <option value = "16">16</option>
+    <option value = "17">17</option>
+    <option value = "18">18</option>
+    <option value = "19">19</option>
+    <option value = "20">20</option>
+    <option value = "21">21</option>
+    <option value = "22">22</option>
+    <option value = "23">23</option>
+    <option value = "24">24</option>
+    <option value = "25">25</option>
+    <option value = "26">26</option>
+    <option value = "27">27</option>
+    <option value = "28">28</option>
+    <option value = "29">29</option>
+    <option value = "30">30</option>
+</select>
+<br>
+<br>
+
+<script type = "text/JavaScript" src = "/assets/js/live/Config.js"></script>
+<script type = "text/JavaScript" src = "/assets/js/live/GetData.js"></script>
+<script type = "text/JavaScript" src = "/assets/js/live/ApplyPoints.js"></script>
+<script type = "text/JavaScript" src = "/assets/js/live/CheckOut.js"></script>
+<noscript><p><b>JavaScript must be enabled for Dragon Quest Live to function.</b></p><br></noscript>
+
+<button class = "SectionButton" style = "background-color: #23a950;" onclick = "CheckOut ();">Check Out</button>
+<p id = "SendingLabel"></p>

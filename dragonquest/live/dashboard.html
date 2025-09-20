@@ -1,0 +1,40 @@
+---
+
+# ***********************************
+# * dragonquest/live/dashboard.html *
+# ***********************************
+#
+# Copyright 2024 1st New Longton Scouts.
+# All rights reserved.
+# See below for authors.
+
+title: Dragon Quest Live Dashboard - 1st New Longton Scouts
+heading: Dragon Quest Dashboard
+layout: default
+authors: Alex Paterson
+colour: 7413dc
+
+---
+<div id = "UnauthenticatedContent">
+    <a href = "/dragonquest/live/authenticate.html"><button class = "JoinTheAdventureButton" style = "background-color: #ed3f23;">Authenticate your Device</button></a>
+</div>
+<div id = "AuthenticatedContent" style = "visibility: hidden;">
+    <a href = "/dragonquest/live/checkin.html"><button class = "JoinTheAdventureButton">Checkpoint Check In</button></a>
+    <br>
+    <a href = "/dragonquest/live/checkout.html"><button class = "JoinTheAdventureButton">Checkpoint Check Out</button></a>
+    <br>
+    <a href = "/dragonquest/live/checkout_start.html"><button class = "SectionButton" style = "background-color: #23a950;">Start Line Check Out</button></a>
+    <a href = "/dragonquest/live/checkin_finish.html"><button class = "SectionButton" style = "background-color: #ed3f23;">Finish Line Check In</button></a>
+</div>
+<script>
+
+    if (localStorage.getItem ("DragonQuestLiveKey") != null)
+    {
+        document.getElementById ("UnauthenticatedContent").style.display = "none";
+        document.getElementById ("AuthenticatedContent").style.visibility = "visible";
+    }
+
+</script>
+<noscript><b>You must have JavaScript enabled to use this page.</b></noscript>
+<br>
+<br>

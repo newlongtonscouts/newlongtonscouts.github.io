@@ -1,0 +1,38 @@
+---
+
+# *********************************
+# * dragonquest/live/checkin.html *
+# *********************************
+#
+# Copyright 2024 1st New Longton Scouts.
+# All rights reserved.
+# See below for authors.
+
+title: Dragon Quest Live Check In - 1st New Longton Scouts
+heading: Dragon Quest Live Check In
+layout: textpage
+authors: Alex Paterson
+colour: 7413dc
+
+---
+
+<p>Team:</p>
+<select id = "Team">
+    <option value = "Error">Could not connect to server.</option>
+</select>
+<br>
+<br>
+<p>Checkpoint:</p>
+<select id = "Checkpoint">
+    <option value = "Error">Could not connect to server.</option>
+</select>
+<br>
+<br>
+
+<script type = "text/JavaScript" src = "/assets/js/live/Config.js"></script>
+<script type = "text/JavaScript" src = "/assets/js/live/GetData.js"></script>
+<script type = "text/JavaScript" src = "/assets/js/live/CheckIn.js"></script>
+<noscript><p><b>JavaScript must be enabled for Dragon Quest Live to function.</b></p><br></noscript>
+
+<button class = "SectionButton" style = "background-color: #23a950;" onclick = "CheckIn ();">Check In</button>
+<p id = "SendingLabel"></p>
